@@ -4,3 +4,6 @@
 [submodule "voice/writer"]
 	path = voice/writer
 	url = git@github.com:daeroworld/whiscript-backend-voice-writer.git
+[submodule "voice/reader"]
+	path = voice/reader
+	url = git@github.com:daeroworld/whiscript-backend-voice-reader.git
