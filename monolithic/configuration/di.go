@@ -3,7 +3,7 @@ package configuration
 import (
 	"fmt"
 	"net/http"
-	
+	voiceReader "voice/reader/configuration"
 	voiceWriter "voice/writer/configuration"
 
 	sharedConfiguration "github.com/daeroworld/shared/configuration"
@@ -15,6 +15,7 @@ type Container struct {
 	Router      *gin.Engine
 	Variable    *Variable
 	voiceWriter sharedConfiguration.IContainer
+	voiceReader sharedConfiguration.IContainer
 }
 
 func (c *Container) GetHttpHandler() http.Handler {
@@ -45,6 +46,7 @@ func (c *Container) DefineDatabase(databaseWrappers ...any) error {
 
 func (c *Container) DefineRoute(router interface{}) error {
 	c.voiceWriter.DefineRoute(router)
+	c.voiceReader.DefineRoute(router)
 	return nil
 }
 
@@ -54,7 +56,7 @@ func (c *Container) DefineGrpc() error {
 
 func (c *Container) InitDependency(db interface{}) error {
 	c.voiceWriter = voiceWriter.NewMonoContainer()
-	
+	c.voiceReader = voiceReader.NewMonoContainer()
 	return nil
 }
 
