@@ -1,3 +1,6 @@
 [submodule "shared"]
 	path = shared
 	url = git@github.com:daeroworld/shared.git
+[submodule "voice/writer"]
+	path = voice/writer
+	url = git@github.com:daeroworld/whiscript-backend-voice-writer.git
