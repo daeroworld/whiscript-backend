@@ -1,0 +1,7 @@
+FROM postgres:15-alpine
+
+ENV POSTGRES_USER root
+ENV POSTGRES_PASSWORD root
+ENV POSTGRES_DB whiscript
+
+EXPOSE 5432
