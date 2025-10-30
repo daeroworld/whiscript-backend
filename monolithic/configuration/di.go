@@ -45,8 +45,8 @@ func (c *Container) DefineDatabase(databaseWrappers ...any) error {
 }
 
 func (c *Container) DefineRoute(router interface{}) error {
-	c.voiceWriter.DefineRoute(router)
-	c.voiceReader.DefineRoute(router)
+	//c.voiceWriter.DefineRoute(router)
+	//c.voiceReader.DefineRoute(router)
 	return nil
 }
 
