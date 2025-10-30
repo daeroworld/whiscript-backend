@@ -16,7 +16,7 @@ func NewVariable() *Variable {
 			Password: "root",
 		},
 		Api: &configuration.Api{
-			Port: 25002,
+			Port: 25010,
 		},
 		Frontend: &configuration.Api{
 			Ip:   "localhost",
