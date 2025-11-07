@@ -7,3 +7,9 @@
 [submodule "voice/reader"]
 	path = voice/reader
 	url = git@github.com:daeroworld/whiscript-backend-voice-reader.git
+[submodule "text/writer"]
+	path = text/writer
+	url = git@github.com:daeroworld/whiscript-backend-text-writer.git
+[submodule "text/reader"]
+	path = text/reader
+	url = git@github.com:daeroworld/whiscript-backend-text-reader.git
