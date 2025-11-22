@@ -13,3 +13,9 @@
 [submodule "text/reader"]
 	path = text/reader
 	url = git@github.com:daeroworld/whiscript-backend-text-reader.git
+[submodule "text/bus"]
+	path = text/bus
+	url = git@github.com:daeroworld/whiscript-backend-text-bus.git
+[submodule "voice/bus"]
+	path = voice/bus
+	url = git@github.com:daeroworld/whiscript-backend-voice-bus.git
